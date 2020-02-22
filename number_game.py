@@ -15,6 +15,7 @@ random_num = random.randint(low, high)
 # The game chooses the first number for the player
 first_num = random.randint(low, high)
 
+# Input validation
 def inputNumber(message):
 	while True:
 		try:
@@ -46,10 +47,8 @@ while i <= guesses:
 	# For debugging
 	# print(random_num)
 
-	# User inputs guess 1 through max allowedd guesses
-	
+	# User inputs guess 1 through max allowed guesses
 	guess = inputNumber(f"You have [{4-i}] guesses left> ")
-	# guess = int(input(f"You have [{4-i}] guesses left> "))
 
 	if guess != random_num:
 		if guess < random_num:

@@ -53,7 +53,7 @@ while i < guesses:
 		if guess > random_num:
 			print(f"\n{guess} is too high!\n")
 
-	else: # guess == random_num: 
+	else:
 		print(f"\n{guess} is the right answer!\n\nᕕ( ᐛ )ᕗ  !!! Great job !!!\n\n")
 		quit(0)
 

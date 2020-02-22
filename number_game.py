@@ -1,4 +1,4 @@
-import random
+from random import randint
 
 # Minimum number in range
 low = 0
@@ -10,10 +10,10 @@ high = 30
 guesses = 3
 
 # Initiate a random number that will be the basis of the game
-random_num = random.randint(low, high)
+random_num = randint(low, high)
 
 # The game chooses the first number for the player
-first_num = random.randint(low, high)
+first_num = randint(low, high)
 
 # Input validation
 def inputNumber(message):
@@ -29,7 +29,7 @@ def inputNumber(message):
 # Initiate the while loop index
 i = 0
 
-while i <= guesses:
+while i < guesses:
 	# Increment the while counter.
 	i = i + 1
 	# Automatic first guess made by system
@@ -62,4 +62,4 @@ while i <= guesses:
 	# Has user made the max allowed guesses?
 	if i == guesses:
 		print(f"Sorry, the number was {random_num}.\nBetter luck next time.\n\n ｡ﾟヽ(ﾟ´Д｀)ﾉﾟ｡ \n\n")
-		break
+	#	break

@@ -25,7 +25,6 @@ def inputNumber(message):
 			continue
 		else:
 			return userInput
-			break
 
 # Initiate the while loop index
 i = 0

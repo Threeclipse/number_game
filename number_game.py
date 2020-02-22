@@ -56,9 +56,9 @@ while i < guesses:
 		if guess > random_num:
 			print(f"\n{guess} is too high!\n")
 
-	if guess == random_num: 
+	else: # guess == random_num: 
 		print(f"\n{guess} is the right answer!\n\nᕕ( ᐛ )ᕗ  !!! Great job !!!\n\n")
-		break
+		quit(0)
 	# Has user made the max allowed guesses?
-	if i == guesses:
-		print(f"Sorry, the number was {random_num}.\nBetter luck next time.\n\n ｡ﾟヽ(ﾟ´Д｀)ﾉﾟ｡ \n\n")
+	#if i == guesses:
+print(f"Sorry, the number was {random_num}.\nBetter luck next time.\n\n ｡ﾟヽ(ﾟ´Д｀)ﾉﾟ｡ \n\n")

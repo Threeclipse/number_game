@@ -62,4 +62,3 @@ while i < guesses:
 	# Has user made the max allowed guesses?
 	if i == guesses:
 		print(f"Sorry, the number was {random_num}.\nBetter luck next time.\n\n ｡ﾟヽ(ﾟ´Д｀)ﾉﾟ｡ \n\n")
-	#	break

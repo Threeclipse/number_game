@@ -46,12 +46,12 @@ while i < guesses:
 	# User inputs guess 1 through max allowed guesses
 	guess = inputNumber(f"You have [{4-i}] guesses left> ")
 
-	if guess != random_num:
-		if guess < random_num:
-			print(f"\n{guess} is too low!\n")
-	
-		if guess > random_num:
-			print(f"\n{guess} is too high!\n")
+	# check guess
+	if guess > random_num:
+		print(f"\n{guess} is too high!\n")
+
+	elif guess < random_num:
+		print(f"\n{guess} is too low!\n")
 
 	else:
 		print(f"\n{guess} is the right answer!\n\nᕕ( ᐛ )ᕗ  !!! Great job !!!\n\n")

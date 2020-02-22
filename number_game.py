@@ -34,7 +34,7 @@ while i < guesses:
 	i = i + 1
 	# Automatic first guess made by system
 	if i == 1:
-		print(f"\nI'm thinking of a number between {minimum} and {maximum}.\nYou have {guesses} tries to find the number.\nTo make this more interesting, I'm going to make your first guess for you.\n\n...and that number is {first_num}.")
+		print(f"\nI'm thinking of a number between {minimum} and {maximum}.\nYou have {guesses} tries to find the number.\nTo make this more interesting,\nI'm going to start you off with a number of my choosing!\n\n...and that number is {first_num}.")
 		if first_num < random_num:
 			print(f"\n{first_num} is too low!\n")
 		if first_num > random_num:
